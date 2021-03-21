@@ -6,5 +6,8 @@ spring:
     name: springboot-dubbo-demo-consumer
 
 dubbo:
+  consumer:
+    check: false
   registry:
     address: nacos://127.0.0.1:8848
+    check: false

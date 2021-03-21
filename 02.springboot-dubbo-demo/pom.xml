@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -12,13 +13,43 @@
 
 	<groupId>com.xxb</groupId>
 	<artifactId>springboot-dubbo-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${demo.version}</version>
 	<name>springboot-dubbo-demo</name>
 	<description>Demo project for Spring Boot Dubbo</description>
+
+	<properties>
+		<spring-boot.version>2.4.4</spring-boot.version>
+		<dubbo.version>2.7.7</dubbo.version>
+		<nacos.version>1.3.2</nacos.version>
+		<demo.version>0.0.1-SNAPSHOT</demo.version>
+	</properties>
 
 	<modules>
 		<module>springboot-dubbo-demo-api</module>
 		<module>springboot-dubbo-demo-provider</module>
 		<module>springboot-dubbo-demo-consumer</module>
 	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.dubbo</groupId>
+				<artifactId>dubbo-spring-boot-starter</artifactId>
+				<version>${dubbo.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/com.alibaba/dubbo-registry-nacos -->
+			<dependency>
+				<groupId>com.alibaba.nacos</groupId>
+				<artifactId>nacos-client</artifactId>
+				<version>${nacos.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.xxb</groupId>
+				<artifactId>springboot-dubbo-demo-api</artifactId>
+				<version>${demo.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

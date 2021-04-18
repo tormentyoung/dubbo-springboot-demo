@@ -1,4 +1,4 @@
-package com.xxb.springboot.dubbo.demo.api.service;
+package com.demo.dubbo.api.service;
 
 public interface HelloService {
     String sayHello(String name);

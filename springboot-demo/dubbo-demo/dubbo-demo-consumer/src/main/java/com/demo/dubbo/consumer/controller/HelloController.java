@@ -1,6 +1,6 @@
-package com.xxb.springboot.dubbo.demo.consumer.controller;
+package com.demo.dubbo.consumer.controller;
 
-import com.xxb.springboot.dubbo.demo.api.service.HelloService;
+import com.demo.dubbo.api.service.HelloService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

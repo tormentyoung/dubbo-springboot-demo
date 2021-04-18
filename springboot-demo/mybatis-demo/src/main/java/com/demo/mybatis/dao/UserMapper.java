@@ -1,7 +1,7 @@
-package com.xxb.springboot.dao;
+package com.demo.mybatis.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.xxb.springboot.entity.User;
+import com.demo.mybatis.entity.User;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -1,4 +1,4 @@
-package com.xxb.springboot.entity;
+package com.demo.mybatis.entity;
 
 import lombok.Data;
 

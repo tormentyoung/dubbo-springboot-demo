@@ -1,7 +1,7 @@
-package com.xxb.springboot.controller;
+package com.demo.mybatis.controller;
 
-import com.xxb.springboot.dao.UserMapper;
-import com.xxb.springboot.entity.User;
+import com.demo.mybatis.dao.UserMapper;
+import com.demo.mybatis.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

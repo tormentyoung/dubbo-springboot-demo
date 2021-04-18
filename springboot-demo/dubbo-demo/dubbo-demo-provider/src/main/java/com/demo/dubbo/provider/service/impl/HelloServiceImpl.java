@@ -1,6 +1,6 @@
-package com.xxb.springboot.dubbo.demo.provider.service.impl;
+package com.demo.dubbo.provider.service.impl;
 
-import com.xxb.springboot.dubbo.demo.api.service.HelloService;
+import com.demo.dubbo.api.service.HelloService;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

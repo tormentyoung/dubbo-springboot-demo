@@ -6,7 +6,7 @@
 
 	<parent>
 		<artifactId>springboot-demo</artifactId>
-		<groupId>com.xxb</groupId>
+		<groupId>com.demo</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 

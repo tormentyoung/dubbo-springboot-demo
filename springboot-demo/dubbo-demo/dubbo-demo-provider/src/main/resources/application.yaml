@@ -1,0 +1,14 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: com.xxb.springboot-dubbo-demo-provider
+
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.xxb.springboot.dubbo.demo.provider.service

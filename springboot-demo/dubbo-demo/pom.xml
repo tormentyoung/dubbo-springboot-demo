@@ -15,39 +15,9 @@
 	<name>dubbo-demo</name>
 	<description>Demo project for Spring Boot Dubbo</description>
 
-	<properties>
-		<spring-boot.version>2.4.4</spring-boot.version>
-		<dubbo.version>2.7.7</dubbo.version>
-		<nacos.version>1.3.2</nacos.version>
-		<demo.version>0.0.1-SNAPSHOT</demo.version>
-	</properties>
-
 	<modules>
 		<module>dubbo-demo-api</module>
 		<module>dubbo-demo-provider</module>
 		<module>dubbo-demo-consumer</module>
 	</modules>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.apache.dubbo</groupId>
-				<artifactId>dubbo-spring-boot-starter</artifactId>
-				<version>${dubbo.version}</version>
-			</dependency>
-
-			<!-- https://mvnrepository.com/artifact/com.alibaba/dubbo-registry-nacos -->
-			<dependency>
-				<groupId>com.alibaba.nacos</groupId>
-				<artifactId>nacos-client</artifactId>
-				<version>${nacos.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.demo</groupId>
-				<artifactId>dubbo-demo-api</artifactId>
-				<version>${demo.version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 </project>

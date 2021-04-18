@@ -44,7 +44,7 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.xxb</groupId>
+				<groupId>com.demo</groupId>
 				<artifactId>dubbo-demo-api</artifactId>
 				<version>${demo.version}</version>
 			</dependency>

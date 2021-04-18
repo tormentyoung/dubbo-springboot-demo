@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: com.xxb.springboot-dubbo-demo-consumer
+    name: dubbo-demo-consumer
 
 dubbo:
   consumer:

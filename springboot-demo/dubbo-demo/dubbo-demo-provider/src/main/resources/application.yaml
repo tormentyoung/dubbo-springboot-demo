@@ -2,7 +2,7 @@ server:
   port: 8088
 spring:
   application:
-    name: com.xxb.springboot-dubbo-demo-provider
+    name: dubbo-demo-provider
 
 dubbo:
   registry:
@@ -11,4 +11,4 @@ dubbo:
     name: dubbo
     port: -1
   scan:
-    base-packages: com.xxb.springboot.dubbo.demo.provider.service
+    base-packages: com.demo.dubbo.provider.service

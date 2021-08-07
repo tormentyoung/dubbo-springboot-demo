@@ -7,6 +7,7 @@
 		<module>initialize-demo</module>
 		<module>dubbo-demo</module>
 		<module>mybatis-demo</module>
+		<module>kafka-demo</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

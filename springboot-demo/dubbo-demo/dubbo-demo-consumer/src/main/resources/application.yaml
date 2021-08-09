@@ -4,10 +4,29 @@ server:
 spring:
   application:
     name: dubbo-demo-consumer
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: 127.0.0.1:8848
 
 dubbo:
+  cloud:
+    subscribed-services: dubbo-demo-provider
   consumer:
     check: false
+    timeout: 3000
   registry:
-    address: nacos://127.0.0.1:8848
+    address: spring-cloud://127.0.0.1:8848
     check: false
+  protocol:
+    name: dubbo
+    port: -1
+
+logging:
+  level:
+    org.apache.dubbo: trace
+    com.alibaba: trace

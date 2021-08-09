@@ -1,12 +1,10 @@
 package com.demo.dubbo.provider.service.impl;
 
 import com.demo.dubbo.api.service.HelloService;
-import org.apache.dubbo.config.annotation.DubboService;
+import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component
-@DubboService
+@Service
 public class HelloServiceImpl implements HelloService {
 
     @Value("${spring.application.name}")
